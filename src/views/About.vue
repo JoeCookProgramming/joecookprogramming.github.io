@@ -12,7 +12,7 @@
                         </h1>
                         <div class="flex flex-wrap text-center justify-center ">
                             <p class="text-m leading-relaxed mt-4 mb-2  text-deep-blue">
-                                Coming Soon
+                                Coming whenever I can be bothered
                             </p>
                         </div>
                     </div>
