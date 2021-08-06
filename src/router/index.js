@@ -43,6 +43,8 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    base: "/emporium/"
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/emporium/'
+    : '/'
 })
 export default router
