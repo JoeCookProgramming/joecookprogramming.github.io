@@ -24,16 +24,16 @@
             tag="a" 
             class="mt-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 md:mt-0 md:ml-2" 
             active-class="text-green-500"
-            to="Initiative">
+            to="/">
             Initiative Tracker
         </router-link>
-        <router-link 
+        <!-- <router-link 
             tag="a" 
             class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 md:mt-0 md:ml-2" 
             active-class="text-green-500"
             to="Dice">
             Dice Roller
-        </router-link>
+        </router-link> -->
         <router-link 
             tag="a" 
             class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 md:mt-0 md:ml-2" 
