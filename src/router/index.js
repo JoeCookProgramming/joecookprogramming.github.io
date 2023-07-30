@@ -43,6 +43,6 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    base: '/'
+    base: '/emporium/'
 })
 export default router
