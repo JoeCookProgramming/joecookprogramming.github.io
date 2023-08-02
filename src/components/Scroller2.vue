@@ -168,6 +168,10 @@ export default {
 
 <style scoped>
 
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
 .picker {
     height: 200px;
     width: 200px;
