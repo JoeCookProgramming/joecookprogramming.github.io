@@ -4,6 +4,7 @@
 </template>
 
 <script>
+import { event } from 'vue-gtag'
 import Header from './components/Header.vue'
   export default {
     name: 'app',
@@ -12,7 +13,16 @@ import Header from './components/Header.vue'
     },
     created () {
       this.$store.dispatch('retrieveCookies')
+    },
+    setup() {
+      const login = () => {
+        event('login', {method: 'Google'})
+      }
+      return {
+        login
+      }
     }
+
   }
 </script>
 
