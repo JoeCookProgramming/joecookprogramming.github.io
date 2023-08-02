@@ -11,7 +11,7 @@
                         :options="myOptions" 
                         v-model="scrollValue"
                         inactive-style="opacity: 0"
-                        wheel-speed="2"
+                        wheel-speed="0.2"
                     >
                         <template v-slot:option="prop" >
                         <div class="custom-option">
@@ -193,7 +193,7 @@ export default {
 
 .custom-option {
   padding: 10px 10px; 
-  height: 10px; 
+  height: 5px; 
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
