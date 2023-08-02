@@ -9,7 +9,7 @@ createApp(App)
     .use(store)
     .use(router)
     .use(VueGtag, {
-        config: { id: "GA_MEASUREMENT_ID" }
+        config: { id: "G-YFZLQEKWK7" }
       })
     .mount('#app')
 
