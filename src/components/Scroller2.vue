@@ -179,7 +179,7 @@ export default {
     left: 50%;
     transform: translate(-50%);
     border-radius: 100%;
-    box-shadow: inset -25px -25px 40px rgba(0,0,0,0.8);
+    box-shadow: inset -25px -0px 40px rgba(0,0,0,0.8);
 }
 
 .custom-center-overlay {

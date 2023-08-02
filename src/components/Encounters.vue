@@ -179,6 +179,7 @@ span.step {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-15%);
+  box-shadow: inset -0px -10px 10px rgba(0,0,0,0.8);
 
 }
 
