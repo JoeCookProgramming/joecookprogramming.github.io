@@ -20,5 +20,23 @@
             </div>
         </div>        
     </div>
+    <Scroller2/>
   </div>
 </template>
+
+<script>
+// import ActiveCombat from "../components/ActiveCombat.vue"
+import Scroller2 from "../components/Scroller2.vue"
+
+export default {
+    components: {
+        Scroller2
+    },
+    data() {
+        return {
+            titleText: "Initiative & Health Tracker"
+        }
+    }  
+}
+
+</script>

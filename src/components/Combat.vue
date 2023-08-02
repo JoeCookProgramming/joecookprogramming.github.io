@@ -179,7 +179,7 @@
 </template>
 
 <script>
-import Scroller from './Scroller.vue'
+import Scroller from './Scroller2.vue'
 import ActiveCombat from './ActiveCombat.vue'
 import Players from './Players.vue'
 import Encounters from './Encounters.vue'
