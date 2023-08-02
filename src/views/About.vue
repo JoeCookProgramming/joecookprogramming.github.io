@@ -20,7 +20,6 @@
             </div>
         </div>        
     </div>
-    <Scroller2/>
   </div>
 </template>
 

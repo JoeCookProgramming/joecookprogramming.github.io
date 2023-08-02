@@ -6,8 +6,11 @@
                 <h3 class="text-3xl text-center mb-2 font-semibold leading-normal">
                     Damage & Healing
                 </h3>
-                <p class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                    Scroll to choose the current value to damage or heal by.
+                <p class="text-md text-center font-light leading-relaxed mt-4 text-gray-700">
+                    Scroll or drag the value to pick your damage or healing.
+                </p>
+                <p class="text-md text-center font-light leading-relaxed mb-4 text-gray-700">
+                    Select the sword to attack and the "+" to heal.
                 </p>
                 <Scroller/>
 
