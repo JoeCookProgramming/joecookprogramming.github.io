@@ -193,7 +193,7 @@ export default {
 
 .custom-option {
   padding: 10px 10px; 
-  height: 5px; 
+  height: 0px; 
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
