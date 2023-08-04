@@ -38,8 +38,8 @@
             tag="a" 
             class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 md:mt-0 md:ml-2" 
             active-class="text-green-500"
-            to="About">
-            About
+            to="Guide">
+            User Guide
         </router-link>
     </nav>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 md:flex-grow md:flex md:p-0 md:justify-end">

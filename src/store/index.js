@@ -13,11 +13,8 @@ export default createStore({
     inInitiative: [
     ],
     encounters: [
-      {name: "Goblin", maxHealth: 7, currentHealth: 7, initiative: 0, type: "enemy", alive: true, suffix: null},
-      {name: "Owlbear", maxHealth: 59, currentHealth: 59, initiative: 0, type: "enemy", alive: true, suffix: null},
-      {name: "Gnoll", maxHealth: 22, currentHealth: 22, initiative: 0, type: "enemy", alive: true, suffix: null},
       {name: "Ancient Red Dragon", maxHealth: 546, currentHealth: 546, initiative: 0, type: "enemy", alive: true, suffix: null},
-      {name: "Sergei", maxHealth: 58, currentHealth: 58, initiative: 0, type: "npc", alive: true, suffix: null},
+      {name: "Red Dragonling", maxHealth: 1, currentHealth: 1, initiative: 0, type: "enemy", alive: true, suffix: null},
       {name: "The Old Barrel", maxHealth: 93, currentHealth: 93, initiative: 0, type: "npc", alive: true, suffix: null},
     ],
     movedEvent: null
