@@ -27,7 +27,7 @@
 
 
                 <div class="w-full px-4 mr-auto ml-auto mb-10">
-                    <h3 class="text-5xl text-center mb-2 font-semibold leading-normal">
+                    <h3 class="text-5xl text-center font-semibold leading-normal">
                         User Guide
                     </h3>
                 </div>
@@ -36,35 +36,33 @@
                     <h3 class="text-3xl text-center mb-2 font-semibold leading-normal">
                         Create Players, Enemies and NPCs
                     </h3>
-                    <br/>
-                    <p class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                    <p v-if="!isMobile()" class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
                         Click to enlarge
                     </p>
-                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Create.gif" @click="createModalToggle" @touchstart="createModalToggle">
+                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Create.gif" @click="!isMobile() ? createModalToggle() : ''">
                 </div>
 
                 <div class="w-full xl:w-4/12 px-4 mr-auto ml-auto mb-10">
                     <h3 class="text-3xl text-center mb-2 font-semibold leading-normal">
                         Add To Initiative
                     </h3>
-                    <p class="text-sm text-center font-light leading-relaxed mt-4 mb-4 text-red-700">
+                    <p v-if="isMobile()" class="text-sm text-center font-light leading-relaxed mt-4 mb-4 text-red-700">
                         *Cannot scroll initiative score on mobile*
                     </p>
-                    <p class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                    <p v-if="!isMobile()" class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
                         Click to enlarge
                     </p>
-                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Initiative.gif" @click="initiativeModalToggle" @touchstart="initiativeModalToggle">
+                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Initiative.gif" @click="!isMobile() ? initiativeModalToggle() : ''">
                 </div>
 
                 <div class="w-full xl:w-4/12 px-4 mr-auto ml-auto mb-10">
                     <h3 class="text-3xl text-center mb-2 font-semibold leading-normal">
                         Deal Damage and Heal
                     </h3>
-                    <br/>
-                    <p class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                    <p v-if="!isMobile()" class="text-md text-center font-light leading-relaxed mt-4 mb-4 text-gray-700">
                         Click to enlarge
                     </p>
-                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Damage.gif" @click="damageModalToggle" @touchstart="damageModalToggle">
+                    <img :style="{'cursor': 'zoom-in'}" class="mt-4" src="/src/assets/Damage.gif" @click="!isMobile() ? damageModalToggle() : ''">
                 </div>
 
 
@@ -104,6 +102,13 @@ export default {
             this.showCreateModal = false
             this.showInitiativeModal = false
             this.showDamageModal = false
+        },
+        isMobile() {
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                return true
+            } else {
+                return false
+            }
         }
     }  
 }

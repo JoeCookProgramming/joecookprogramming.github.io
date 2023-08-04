@@ -134,7 +134,7 @@
               <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
                 Enemy/NPC Name
               </label>
-              <input v-model="newEnemyName" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Goblin A">
+              <input v-model="newEnemyName" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Goblin">
               <p v-if="enemyNameMessage" class="text-red-500 text-xs italic">{{enemyNameMessage}}</p>
             </div>
           </div>
